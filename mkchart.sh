@@ -10,7 +10,7 @@ fi;
 DB=$1
 OUTPUT=$2
 
-rrdtool graph $OUTPUT -a PNG --width 881 --height 487 --start -1d \
+rrdtool graph $OUTPUT -a PNG --width 800 --height 400 --start -1d \
         DEF:watt=$DB:watt:AVERAGE \
         DEF:wattmin=$DB:watt:MIN \
         DEF:wattmax=$DB:watt:MAX \
